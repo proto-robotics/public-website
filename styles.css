@@ -1,0 +1,67 @@
+* {
+  /* This is a simple "CSS reset".  Since different browsers have different
+   * default styles, it is normal to "zero" all styles so that our site looks
+   * the same everywhere.
+   */
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+html {
+  /* Declare variables for things like colors, fonts, and page padding values.
+   */
+  --proto-bg: #fff;
+  --proto-text: #333;
+  --proto-primary: #f2737b;
+
+  --proto-font-size: 14pt;
+  --proto-line-height: 1.5;
+  --proto-font-family: sans-serif;
+
+  /* Default padding values */
+  --proto-sm:0.5rem;
+  --proto-md:1rem;
+  --proto-lg:2rem;
+
+  --proto-page-width:800px;
+
+  color:var(--proto-text);
+  background:var(--proto-bg);
+}
+
+html, button, input {
+  font: var(--proto-font-size) / var(--proto-line-height) var(--proto-font-family);
+}
+
+body {
+  width:100vw;
+  height:100vh;
+
+  display:grid;
+  grid-template:
+    "head" min-content
+    "main" 1fr
+    "foot" min-content
+    / 1fr;
+}
+
+header {
+  background:var(--proto-primary);
+  color:var(--proto-bg);
+  padding:var(--proto-sm);
+}
+
+main {
+  max-width:var(--proto-page-width);
+  padding:var(--proto-md);
+  margin-inline:auto;
+}
+
+footer {
+  background:var(--proto-text);
+  color:var(--proto-bg);
+  padding:var(--proto-sm);
+
+  font-size:0.8rem;
+}
