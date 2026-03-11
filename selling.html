@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>PROTO Robotics — Home</title>
-<meta content="PROTO Robotics builds a colorful robotics learning ecosystem for classrooms, clubs, and curious builders." name="description"/>
+<title>PROTO Robotics — Selling / LOI</title>
+<meta content="Submit a Letter of Intent or request purchasing information for PROTO Robotics." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
@@ -63,89 +63,77 @@
 <main>
 <section class="hero">
 <div class="container">
-<div class="hero-grid">
+<div class="hero-grid onecol">
 <div class="hero-left">
-<div class="pill">Modular • Classroom-ready • Built for momentum</div>
-<div class="h1">A robotics kit that feels like play — and teaches like engineering.</div>
+<div class="pill">Selling</div>
+<div class="h1">Letters of Intent (LOI)</div>
 <p>
-            PROTO is a learning ecosystem that helps students build confidence with mechanics, electronics, and code.
-            The experience is structured enough for classrooms, flexible enough for clubs, and exciting enough to keep students coming back.
+            LOIs help us forecast demand, plan pilots, and prioritize partnerships.
+            Submitting an LOI is not a purchase commitment — it’s a signal of interest.
           </p>
-<div class="hero-actions">
-<a class="btn primary" href="kit.html">Explore&nbsp;the&nbsp;Kit</a>
-<a class="btn" href="impact.html">See Impact</a>
-<a class="btn yellow" href="selling.html">Letters of Intent</a>
-</div>
-</div>
-<div class="hero-right">
-<div class="photo">
-<img alt="PROTO build example" src="assets/img/IMG_8585.webp"/>
-</div>
-<div class="caption">
-<div>
-<div class="h3" style="margin:0">A build you can see (and show off).</div>
-<div class="small">Prototype tractor build — modular, durable, and student-friendly.</div>
-</div>
-<div class="tag">Hardware-first</div>
+
+<div class="card pad" style="margin-top:14px">
+<div class="h3">What happens next?</div>
+<p class="small">
+              We follow up with a short overview, possible pilot timelines, and a demo option.
+              You’ll also get updates as the launch experience is finalized.
+            </p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="section">
+<section class="section" id="loi">
 <div class="container">
-<div class="grid-3">
-<div class="feature">
-<div class="icon blue">01</div>
-<div class="h3">Fast start, real depth</div>
-<p>Students get a win early, then level up with mechanisms, gearing, sensors, and structured challenges.</p>
-</div>
-<div class="feature">
-<div class="icon red">02</div>
-<div class="h3">A complete ecosystem</div>
-<p>Hardware + curriculum + coding environment — designed to fit into classes and after-school programs.</p>
-</div>
-<div class="feature">
-<div class="icon green">03</div>
-<div class="h3">Built for educators</div>
-<p>Clean lesson flow, predictable setup, and a kit that stays organized between periods.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="section">
-<div class="container">
-<div class="split">
-<div class="photo-card">
-<img alt="Students collaborating with a robotics kit" src="assets/img/IMG_9496.JPG"/>
-</div>
+<div class="split onecol">
 <div class="callout">
-<div class="kicker">What it looks like in the room</div>
-<div class="h2">Collaboration that feels natural.</div>
-<p>
-            When the build is approachable and the parts are intuitive, students talk through ideas, test quickly,
-            and improve without fear of “breaking it.” That’s the point: more iteration, more learning, more joy.
-          </p>
-<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-<a class="btn green" href="contact.html">Talk to us</a>
-<a class="btn" href="kit.html#inside">See what’s inside</a>
+<div class="h2">LOI Form</div>
+<p class="small">Front-end only for this static package. Connect to your WordPress backend later.</p>
+<form class="form" data-pretend-submit="">
+<div class="form-row">
+<div>
+<label for="org2">Organization</label>
+<input id="org2" name="org2" placeholder="School / district / org" required=""/>
+</div>
+<div>
+<label for="contact2">Primary Contact</label>
+<input id="contact2" name="contact2" placeholder="Name" required=""/>
 </div>
 </div>
+<div class="form-row">
+<div>
+<label for="email2">Email</label>
+<input id="email2" name="email2" placeholder="you@domain.com" required="" type="email"/>
+</div>
+<div>
+<label for="interest">Interest Level</label>
+<select id="interest" name="interest">
+<option>Exploring</option>
+<option>Interested in a pilot</option>
+<option>Interested in purchase info</option>
+<option>Partner conversation</option>
+</select>
 </div>
 </div>
-</section>
-<section class="section">
-<div class="container">
-<div class="banner">
-<div class="row">
-<div class="left">
-<div class="h2">Want a preview for your school or organization?</div>
-<p>Request a demo and we’ll send a short walkthrough + next steps.</p>
+<div class="form-row">
+<div>
+<label for="qty">Estimated Quantity</label>
+<input id="qty" name="qty" placeholder="e.g., 5 kits, 30 students, 2 classes"/>
 </div>
-<div style="display:flex;gap:10px;flex-wrap:wrap">
-<a class="btn primary" href="contact.html">Request Demo</a>
-<a class="btn primary" href="selling.html">Submit LOI</a>
+<div>
+<label for="timeline">Timeline</label>
+<input id="timeline" name="timeline" placeholder="e.g., Fall semester, summer camp"/>
 </div>
+</div>
+<div>
+<label for="notes">Notes</label>
+<textarea id="notes" name="notes" placeholder="Tell us what success looks like for your students."></textarea>
+</div>
+<button class="btn primary" type="submit">Submit LOI</button>
+<p class="small" style="margin-top:10px">
+              Disclaimer: An LOI is non-binding and does not represent a purchase agreement.
+            </p>
+</form>
 </div>
 </div>
 </div>
