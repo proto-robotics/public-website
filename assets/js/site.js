@@ -23,14 +23,6 @@
     window.__toastTimer = setTimeout(()=> toast.style.display='none', 2600);
   }
 
-  document.querySelectorAll('form[data-pretend-submit]').forEach((form) => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      showToast('Got it — message received. We’ll reach out soon.');
-      form.reset();
-    });
-  });
-
   // Active nav highlighting
   const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   document.querySelectorAll('a[data-nav]').forEach(a => {

@@ -106,7 +106,7 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:paragraph {"className":"proto-muted"} -->
-        <form class="proto-form" action="#" method="post" onsubmit="alert('Connect this form to Formspree/Netlify/your backend.'); return false;">
+<form class="proto-form" action="mailto:info@protorobotics.org?subject=PROTO%20Contact%20Request&amp;body=Hi%20PROTO%20team%2C%0A%0AName%3A%20%0AEmail%3A%20%0AOrganization%2FSchool%3A%20%0AMessage%3A%20" method="post" enctype="text/plain">
   <div style="display:grid; gap:12px; grid-template-columns:1fr 1fr;">
     <label style="display:flex; flex-direction:column; gap:6px;">
       <span style="font-weight:700;">Name</span>
@@ -133,14 +133,9 @@
       <a class="wp-block-button__link wp-element-button" href="mailto:info@protorobotics.org">Email instead</a>
     </div>
   </div>
-  <p class="proto-muted" style="margin-top:10px; font-size:0.95rem;">To make this form actually send, connect it to Formspree, Netlify Forms, or your backend.</p>
+        <p class="proto-muted" style="margin-top:10px; font-size:0.95rem;">This opens a pre-filled email in your default email app for immediate delivery.</p>
 </form>
         <!-- /wp:paragraph -->
-
-        <!-- wp:shortcode -->
-        [contact-form-7 id="REPLACE_ME" title="PROTO Contact"]
-        <!-- /wp:shortcode -->
-
         <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.95rem"},"color":{"text":"rgba(11,18,32,0.72)"}}} -->
         <p style="font-size:0.95rem;color:rgba(11,18,32,0.72)">Tip: ask for name, email, school/district, grade level, and how many kits you want. Add a checkbox for purchase order.</p>
         <!-- /wp:paragraph -->
