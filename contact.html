@@ -138,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="split">
 <div class="callout">
 <div class="h2">Send a message</div>
-<form class="form" action="https://formspree.io/f/xkopagbz" method="POST">
+<form class="form" id="contactForm">
 <div class="form-row">
 <div>
 <label for="name">Name</label>
@@ -223,5 +223,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 <script src="assets/js/site.js"></script>
+<script>
+// ===== CONTACT FORM =====
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+contactForm.addEventListener("submit", async function(e) {
+e.preventDefault();
+
+const formData = new FormData(this);
+
+const data = {
+name: formData.get("name"),
+organization: formData.get("org"),
+email: formData.get("email"),
+role: formData.get("role"),
+message: formData.get("msg")
+};
+
+const res = await fetch("http://localhost:3000/api/contact", {
+method: "POST",
+headers: {
+"Content-Type": "application/json"
+},
+body: JSON.stringify(data)
+});
+
+const result = await res.json();
+alert(result.message || "Submitted");
+});
+}
+
+
+// ===== LOI FORM =====
+const loiForm = document.getElementById("loiForm");
+
+if (loiForm) {
+loiForm.addEventListener("submit", async function(e) {
+e.preventDefault();
+
+const formData = new FormData(this);
+
+const data = {
+organization: formData.get("org2"),
+primaryContactName: formData.get("contact2"),
+email: formData.get("email2"),
+interestLevel: formData.get("interest"),
+estimatedQuantity: formData.get("qty"),
+timeline: formData.get("timeline"),
+notes: formData.get("notes")
+};
+
+const res = await fetch("http://localhost:3000/api/loi", {
+method: "POST",
+headers: {
+"Content-Type": "application/json"
+},
+body: JSON.stringify(data)
+});
+
+const result = await res.json();
+alert(result.message || "Submitted");
+});
+}
+</script>
 </body>
 </html>
